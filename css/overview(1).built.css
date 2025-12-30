@@ -1,0 +1,85 @@
+/* CSS fix for highlight section AI - media card caption and alignment */
+.section-highlights .media-gallery-item-apple-intelligence .caption.typography-media-card-gallery-headline {
+	margin-bottom: 18px;
+}
+
+.media-card-caption {
+	display: block;
+	margin-top: 0.75em;
+}
+
+.typography-media-card-caption {
+	font-size: 19px;
+	line-height: 1.2105263158;
+	font-weight: 400;
+	letter-spacing: 0.012em;
+}
+
+@media (max-width: 1068px) {
+	.typography-media-card-caption {
+		font-size: 14px;
+		line-height: 1.2857742857;
+		font-weight: 400;
+		letter-spacing: -0.016em;
+	}
+}
+
+@media (max-width: 734px) {
+	.typography-media-card-caption {
+		font-size: 12px;
+		line-height: 1.3333733333;
+		font-weight: 400;
+		letter-spacing: -0.01em;
+	}
+}
+
+/* Custom Chip media card */
+.gallery-item.media-gallery-item-chip .caption-container a {
+	text-decoration: none;
+}
+.gallery-item.media-gallery-item-chip .caption-container .typography-media-card-gallery-headline {
+	width: auto;
+}
+.gallery-item.media-gallery-item-chip .caption-container a .media-card-caption .show-title {
+	font-style: italic;
+}
+
+/* CSS fix for disclaimer */
+.disclaimer {
+	color: #6e6e73;
+	font-size: 14px;
+	line-height: 1.2857742857;
+	font-weight: 400;
+}
+
+@media (max-width: 734px) {
+	.disclaimer {
+		font-size: 12px;
+		line-height: 1.3333733333;
+		font-weight: 400;
+	}
+}
+
+/* fix for 3 tiles layout ios26 section */
+@media only screen and (min-width: 1069px) {
+	.gallery.ios-gallery .card-set {
+		grid-auto-columns: 372px;
+	}
+}
+
+/* Fix for Highlight : Apple Intelligence */
+@media (max-width: 735px) {
+	.section-highlights .media-gallery-item-apple-intelligence .caption {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 446px) {
+	[data-component-list="MediaCardGallery"] .media-gallery .caption, [data-media-card-gallery] .media-gallery .caption {
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+	.section-highlights .media-gallery-item-apple-intelligence .caption {
+		font-size: 14px;
+	}
+}
