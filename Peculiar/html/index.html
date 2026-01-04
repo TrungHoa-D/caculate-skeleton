@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Logic Pocket - Thiết bị học tập thông minh thế hệ mới từ Peculiar">
+  <meta name="theme-color" content="#FFFFFF">
+  <title>Logic Pocket | Peculiar</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- ═══════════════════════════════════════════════════════════════
+       HEADER
+       ═══════════════════════════════════════════════════════════════ -->
+  <header class="header">
+    <div class="header-content">
+      <a href="#" class="logo">
+        <img src="../img/peculiar-logo.png" alt="Peculiar" onerror="this.style.display='none'">
+        <span>Peculiar</span>
+      </a>
+      <div class="header-right">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#highlights">Điểm nổi bật</a></li>
+            <li><a href="#features">Tính năng</a></li>
+            <li><a href="#specs">Thông số</a></li>
+            <li><a href="story.html">Câu chuyện</a></li>
+          </ul>
+        </nav>
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Chuyển đổi giao diện sáng/tối">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 1: HERO
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="hero" id="home">
+      <span class="hero-badge">
+        ✦ Concept Product
+      </span>
+      <h1 class="hero-title">
+        <span class="gradient-text">Logic Pocket</span>
+      </h1>
+      <p class="hero-subtitle">Thiết bị học tập thông minh thế hệ mới, được thiết kế dành riêng cho môi trường học đường</p>
+      
+      <div class="scroll-indicator">
+        <span>Khám phá</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M19 12l-7 7-7-7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 2: HIGHLIGHTS GALLERY
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="highlights" id="highlights">
+      <div class="highlights-header">
+        <h2><span class="gradient-text">Điểm nổi bật.</span></h2>
+        <p class="text-secondary">Khám phá những tính năng đặc biệt</p>
+      </div>
+      
+      <div class="highlights-gallery" id="highlights-gallery">
+        <div class="highlight-card highlight-card--display animate-on-scroll" data-index="0">
+          <span class="highlight-card-icon">📱</span>
+          <div class="highlight-card-content">
+            <h3 class="highlight-card-title">Màn hình IPS 3.4"</h3>
+            <p class="highlight-card-desc">700 nits, đọc được dưới ánh nắng</p>
+          </div>
+        </div>
+        
+        <div class="highlight-card highlight-card--keypad animate-on-scroll" data-index="1">
+          <span class="highlight-card-icon">⌨️</span>
+          <div class="highlight-card-content">
+            <h3 class="highlight-card-title">20 phím thông minh</h3>
+            <p class="highlight-card-desc">IPS back display, context-aware</p>
+          </div>
+        </div>
+        
+        <div class="highlight-card highlight-card--haptic animate-on-scroll" data-index="2">
+          <span class="highlight-card-icon">🎮</span>
+          <div class="highlight-card-content">
+            <h3 class="highlight-card-title">Haptic feedback</h3>
+            <p class="highlight-card-desc">Cảm nhận tinh tế từng chạm</p>
+          </div>
+        </div>
+        
+        <div class="highlight-card highlight-card--processor animate-on-scroll" data-index="3">
+          <span class="highlight-card-icon">⚡</span>
+          <div class="highlight-card-content">
+            <h3 class="highlight-card-title">Quad-core 2.0GHz</h3>
+            <p class="highlight-card-desc">8GB RAM, 32GB storage</p>
+          </div>
+        </div>
+        
+        <div class="highlight-card highlight-card--battery animate-on-scroll" data-index="4">
+          <span class="highlight-card-icon">🔋</span>
+          <div class="highlight-card-content">
+            <h3 class="highlight-card-title">3,500mAh</h3>
+            <p class="highlight-card-desc">Sử dụng cả ngày không lo</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Carousel Navigation Controls -->
+      <div class="carousel-controls">
+        <div class="carousel-dots">
+          <button class="carousel-dot active" data-index="0" aria-label="Slide 1">
+            <span class="dot-progress"></span>
+          </button>
+          <button class="carousel-dot" data-index="1" aria-label="Slide 2">
+            <span class="dot-progress"></span>
+          </button>
+          <button class="carousel-dot" data-index="2" aria-label="Slide 3">
+            <span class="dot-progress"></span>
+          </button>
+          <button class="carousel-dot" data-index="3" aria-label="Slide 4">
+            <span class="dot-progress"></span>
+          </button>
+          <button class="carousel-dot" data-index="4" aria-label="Slide 5">
+            <span class="dot-progress"></span>
+          </button>
+        </div>
+        <button class="carousel-play-pause" id="carousel-play-pause" aria-label="Pause carousel">
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor">
+            <rect x="6" y="4" width="4" height="16" rx="1"/>
+            <rect x="14" y="4" width="4" height="16" rx="1"/>
+          </svg>
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 3: DISPLAY FEATURE
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="feature-section feature-section--display" id="features">
+      <div class="feature-content">
+        <div class="feature-text animate-on-scroll">
+          <span class="feature-label">Màn hình</span>
+          <h2 class="feature-title">3.4 inch.<br>Rực rỡ dưới ánh nắng.</h2>
+          <p class="feature-description">
+            Màn hình IPS full-color với độ phân giải 480 × 480 pixels, tỷ lệ vuông hoàn hảo cho giao diện học tập. 
+            Độ sáng 700 nits cho phép đọc rõ ràng ngay cả khi ở ngoài trời, kết hợp lớp phủ chống chói giảm mỏi mắt.
+          </p>
+          <div class="feature-stats">
+            <div class="feature-stat">
+              <div class="feature-stat-value">700</div>
+              <div class="feature-stat-label">nits</div>
+            </div>
+            <div class="feature-stat">
+              <div class="feature-stat-value">480×480</div>
+              <div class="feature-stat-label">pixels</div>
+            </div>
+            <div class="feature-stat">
+              <div class="feature-stat-value">IPS</div>
+              <div class="feature-stat-label">wide viewing</div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-visual">
+          <div class="feature-mockup animate-on-scroll">📱</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 4: KEYPAD FEATURE
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="feature-section feature-section--keypad">
+      <div class="feature-content feature-content--reverse">
+        <div class="feature-text animate-on-scroll">
+          <span class="feature-label">Bàn phím</span>
+          <h2 class="feature-title">20 phím.<br>Vô vàn khả năng.</h2>
+          <p class="feature-description">
+            Bàn phím vật lý 20 phím với màn hình IPS phía sau, thay đổi biểu tượng theo ngữ cảnh sử dụng.
+            Từ phép tính toán học đến điều khiển media, mỗi phím đều thích ứng với nhu cầu của bạn.
+          </p>
+          <div class="feature-stats">
+            <div class="feature-stat">
+              <div class="feature-stat-value">20</div>
+              <div class="feature-stat-label">phím vật lý</div>
+            </div>
+            <div class="feature-stat">
+              <div class="feature-stat-value">IPS</div>
+              <div class="feature-stat-label">back display</div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-visual">
+          <div class="feature-mockup animate-on-scroll">⌨️</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 5: HAPTIC FEATURE
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="feature-section feature-section--haptic">
+      <div class="feature-content">
+        <div class="feature-text animate-on-scroll">
+          <span class="feature-label">Xúc giác</span>
+          <h2 class="feature-title">Cảm nhận.<br>Từng chạm tinh tế.</h2>
+          <p class="feature-description">
+            Hệ thống haptic feedback với motor LRA và chip điều khiển DA7280 cho phản hồi xúc giác chính xác. 
+            Núm xoay từ tính AS5600 với cảm nhận rung tinh tế, mang đến trải nghiệm điều khiển hoàn toàn mới.
+          </p>
+          <div class="feature-stats">
+            <div class="feature-stat">
+              <div class="feature-stat-value">LRA</div>
+              <div class="feature-stat-label">haptic motor</div>
+            </div>
+            <div class="feature-stat">
+              <div class="feature-stat-value">DA7280</div>
+              <div class="feature-stat-label">controller</div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-visual">
+          <div class="feature-mockup animate-on-scroll">🎮</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 6: PERFORMANCE FEATURE
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="feature-section feature-section--performance">
+      <div class="feature-content feature-content--reverse">
+        <div class="feature-text animate-on-scroll">
+          <span class="feature-label">Hiệu năng</span>
+          <h2 class="feature-title">Mạnh mẽ.<br>Nhỏ gọn.</h2>
+          <p class="feature-description">
+            Chip Rockchip RK3568 với 4 nhân ARM Cortex-A55 xung nhịp 2.0GHz, kết hợp 8GB RAM LPDDR4 
+            và 32GB bộ nhớ eMMC 5.1. Đủ sức mạnh cho mọi tác vụ học tập và giải trí.
+          </p>
+          <div class="feature-stats">
+            <div class="feature-stat">
+              <div class="feature-stat-value">4</div>
+              <div class="feature-stat-label">nhân CPU</div>
+            </div>
+            <div class="feature-stat">
+              <div class="feature-stat-value">8GB</div>
+              <div class="feature-stat-label">RAM</div>
+            </div>
+            <div class="feature-stat">
+              <div class="feature-stat-value">32GB</div>
+              <div class="feature-stat-label">storage</div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-visual">
+          <div class="feature-mockup animate-on-scroll">⚡</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 7: CONNECTIVITY FEATURE
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="feature-section feature-section--connectivity">
+      <div class="feature-content">
+        <div class="feature-text animate-on-scroll">
+          <span class="feature-label">Kết nối</span>
+          <h2 class="feature-title">Luôn kết nối.<br>Mọi lúc mọi nơi.</h2>
+          <p class="feature-description">
+            Wi-Fi 5 (802.11ac) băng tần kép 2.4GHz và 5GHz cho kết nối internet nhanh và ổn định.
+            Bluetooth 5.0 cho phép kết nối tai nghe, loa và các thiết bị ngoại vi khác dễ dàng.
+          </p>
+          <div class="feature-stats">
+            <div class="feature-stat">
+              <div class="feature-stat-value">Wi-Fi 5</div>
+              <div class="feature-stat-label">dual-band</div>
+            </div>
+            <div class="feature-stat">
+              <div class="feature-stat-value">BT 5.0</div>
+              <div class="feature-stat-label">Bluetooth</div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-visual">
+          <div class="feature-mockup animate-on-scroll">📡</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 8: QUICK STATS
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="specs-overview" id="specs">
+      <div class="specs-overview-content">
+        <div class="section-header animate-on-scroll">
+          <h2><span class="gradient-text">Thông Số Nổi Bật</span></h2>
+          <p>Sức mạnh trong lòng bàn tay</p>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="quick-stats">
+          <div class="stat-item animate-on-scroll delay-1">
+            <div class="stat-value">3.4"</div>
+            <div class="stat-label">Màn hình IPS</div>
+          </div>
+          <div class="stat-item animate-on-scroll delay-2">
+            <div class="stat-value">8GB</div>
+            <div class="stat-label">RAM LPDDR4</div>
+          </div>
+          <div class="stat-item animate-on-scroll delay-3">
+            <div class="stat-value">700</div>
+            <div class="stat-label">Nits sáng</div>
+          </div>
+          <div class="stat-item animate-on-scroll delay-4">
+            <div class="stat-value">3,500</div>
+            <div class="stat-label">mAh Pin</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 9: DETAILED SPECS
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="specs-detailed">
+      <div class="section-header animate-on-scroll">
+        <h2><span class="gradient-text">Chi Tiết Kỹ Thuật</span></h2>
+        <p>Mọi thông số bạn cần biết</p>
+        <div class="section-divider"></div>
+      </div>
+      
+      <div class="specs-grid">
+        <!-- Card 1: Processor & Memory -->
+        <div class="spec-card animate-on-scroll delay-1">
+          <div class="spec-card-icon">🖥️</div>
+          <h3 class="spec-card-title">Processor & Memory</h3>
+          <ul class="spec-card-list">
+            <li><span>Processor</span><strong>Rockchip RK3568</strong></li>
+            <li><span>CPU</span><strong>Quad-core A55 2.0GHz</strong></li>
+            <li><span>RAM</span><strong>8 GB LPDDR4</strong></li>
+            <li><span>Storage</span><strong>32 GB eMMC 5.1</strong></li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Display -->
+        <div class="spec-card animate-on-scroll delay-2">
+          <div class="spec-card-icon">📱</div>
+          <h3 class="spec-card-title">Display</h3>
+          <ul class="spec-card-list">
+            <li><span>Type</span><strong>3.4-inch IPS full-color</strong></li>
+            <li><span>Resolution</span><strong>480 × 480 pixels</strong></li>
+            <li><span>Brightness</span><strong>700 nits</strong></li>
+            <li><span>Surface</span><strong>Anti-glare coating</strong></li>
+          </ul>
+        </div>
+
+        <!-- Card 3: Haptic & Input -->
+        <div class="spec-card animate-on-scroll delay-3">
+          <div class="spec-card-icon">🎮</div>
+          <h3 class="spec-card-title">Haptic & Input</h3>
+          <ul class="spec-card-list">
+            <li><span>Haptic Motor</span><strong>VG1040003D LRA</strong></li>
+            <li><span>Controller</span><strong>Dialog DA7280</strong></li>
+            <li><span>Rotary Encoder</span><strong>AS5600 magnetic</strong></li>
+            <li><span>Keypad</span><strong>20-key + IPS display</strong></li>
+            <li><span>Accelerometer</span><strong>3-axis sensor</strong></li>
+          </ul>
+        </div>
+
+        <!-- Card 4: Audio -->
+        <div class="spec-card animate-on-scroll delay-4">
+          <div class="spec-card-icon">🔊</div>
+          <h3 class="spec-card-title">Audio System</h3>
+          <ul class="spec-card-list">
+            <li><span>Speaker</span><strong>Integrated 10W</strong></li>
+            <li><span>Microphone</span><strong>Digital MEMS</strong></li>
+          </ul>
+        </div>
+
+        <!-- Card 5: Power -->
+        <div class="spec-card animate-on-scroll delay-5">
+          <div class="spec-card-icon">🔋</div>
+          <h3 class="spec-card-title">Power System</h3>
+          <ul class="spec-card-list">
+            <li><span>Battery</span><strong>3,500 mAh Li-Po</strong></li>
+            <li><span>Charging Port</span><strong>USB-C</strong></li>
+            <li><span>Charging</span><strong>5V / 2A (10W max)</strong></li>
+            <li><span>Management</span><strong>Smart protection ICs</strong></li>
+          </ul>
+        </div>
+
+        <!-- Card 6: Connectivity -->
+        <div class="spec-card animate-on-scroll delay-6">
+          <div class="spec-card-icon">📡</div>
+          <h3 class="spec-card-title">Connectivity</h3>
+          <ul class="spec-card-list">
+            <li><span>Wi-Fi</span><strong>802.11ac (2.4/5 GHz)</strong></li>
+            <li><span>Bluetooth</span><strong>5.0</strong></li>
+            <li><span>USB-C</span><strong>Charging only</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <!-- Footer Top - Main Content -->
+    <div class="footer-top">
+      <div class="footer-grid">
+        <!-- Column 1: Brand & About -->
+        <div class="footer-column footer-brand">
+          <div class="footer-logo">
+            <img src="../img/peculiar-logo.png" alt="Peculiar" onerror="this.style.display='none'">
+            <span>Peculiar</span>
+          </div>
+          <p class="footer-about">
+            Thiết bị học tập thông minh thế hệ mới, được thiết kế dành riêng cho môi trường học đường Việt Nam.
+          </p>
+          <div class="footer-badge">✦ Concept Product</div>
+        </div>
+        
+        <!-- Column 2: Sản phẩm -->
+        <div class="footer-column">
+          <h4 class="footer-heading">Sản phẩm</h4>
+          <ul class="footer-links">
+            <li><a href="#highlights">Điểm nổi bật</a></li>
+            <li><a href="#features">Tính năng</a></li>
+            <li><a href="#specs">Thông số kỹ thuật</a></li>
+            <li><a href="#">So sánh thiết bị</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3: Hỗ trợ -->
+        <div class="footer-column">
+          <h4 class="footer-heading">Hỗ trợ</h4>
+          <ul class="footer-links">
+            <li><a href="#">Hướng dẫn sử dụng</a></li>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+            <li><a href="#">Liên hệ hỗ trợ</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 4: Về chúng tôi -->
+        <div class="footer-column">
+          <h4 class="footer-heading">Về Peculiar</h4>
+          <ul class="footer-links">
+            <li><a href="story.html">Câu chuyện thương hiệu</a></li>
+            <li><a href="#">Đội ngũ phát triển</a></li>
+            <li><a href="#">Tin tức & Sự kiện</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 5: Liên hệ & Social -->
+        <div class="footer-column footer-contact">
+          <h4 class="footer-heading">Kết nối</h4>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.757-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
+          <p class="footer-email">
+            <a href="mailto:contact@peculiar.vn">contact@peculiar.vn</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer Divider -->
+    <div class="footer-divider"></div>
+    
+    <!-- Footer Bottom - Legal -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p class="footer-copyright">© 2026 Peculiar. All rights reserved.</p>
+        <nav class="footer-legal">
+          <a href="#">Điều khoản sử dụng</a>
+          <span class="divider">|</span>
+          <a href="#">Chính sách bảo mật</a>
+          <span class="divider">|</span>
+          <a href="#">Quy định cookie</a>
+        </nav>
+        <p class="footer-tagline">Designed for Education 🎓</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SCRIPTS
+       ═══════════════════════════════════════════════════════════════ -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
