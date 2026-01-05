@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Câu chuyện thương hiệu Peculiar - Hành trình từ ý tưởng đến hiện thực">
+  <meta name="description" content="Peculiar Brand Story - The journey from idea to reality">
   <meta name="theme-color" content="#FAFAFA">
-  <title>Câu chuyện thương hiệu | Peculiar</title>
+  <title>Brand Story | Peculiar</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
       padding: var(--space-3xl) var(--space-lg);
       background: var(--color-bg-primary);
     }
-    
+
     .story-hero-eyebrow {
       font-size: var(--text-sm);
       text-transform: uppercase;
@@ -30,7 +31,7 @@
       color: var(--color-text-secondary);
       margin-bottom: var(--space-md);
     }
-    
+
     .story-hero-title {
       font-size: var(--text-hero);
       font-weight: 700;
@@ -38,26 +39,26 @@
       line-height: 1.1;
       margin-bottom: var(--space-lg);
     }
-    
+
     .story-hero-subtitle {
       font-size: var(--text-xl);
       color: var(--color-text-secondary);
       max-width: 700px;
       line-height: 1.6;
     }
-    
+
     /* Timeline Section */
     .timeline-section {
       padding: var(--space-3xl) var(--space-lg);
       background: var(--color-bg-secondary);
     }
-    
+
     .timeline-container {
       max-width: 900px;
       margin: 0 auto;
       position: relative;
     }
-    
+
     .timeline-line {
       position: absolute;
       left: 50%;
@@ -66,26 +67,26 @@
       height: 100%;
       background: linear-gradient(to bottom, var(--color-border) 0%, var(--color-text-muted) 50%, var(--color-border) 100%);
     }
-    
+
     .timeline-item {
       display: flex;
       align-items: flex-start;
       margin-bottom: var(--space-3xl);
       position: relative;
     }
-    
+
     .timeline-item:last-child {
       margin-bottom: 0;
     }
-    
+
     .timeline-item:nth-child(odd) {
       flex-direction: row;
     }
-    
+
     .timeline-item:nth-child(even) {
       flex-direction: row-reverse;
     }
-    
+
     .timeline-content {
       width: calc(50% - 40px);
       background: var(--color-surface);
@@ -95,12 +96,12 @@
       border: 1px solid var(--color-border);
       transition: transform var(--transition-normal), box-shadow var(--transition-normal);
     }
-    
+
     .timeline-content:hover {
       transform: translateY(-4px);
       box-shadow: var(--shadow-lg);
     }
-    
+
     .timeline-dot {
       position: absolute;
       left: 50%;
@@ -112,7 +113,7 @@
       border: 4px solid var(--color-bg-secondary);
       z-index: 1;
     }
-    
+
     .timeline-date {
       display: inline-block;
       background: var(--color-bg-tertiary);
@@ -125,14 +126,14 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
-    
+
     .timeline-title {
       font-size: var(--text-xl);
       font-weight: 600;
       margin-bottom: var(--space-md);
       color: var(--color-text-primary);
     }
-    
+
     .timeline-number {
       display: inline-flex;
       align-items: center;
@@ -146,30 +147,30 @@
       font-weight: 600;
       margin-right: var(--space-sm);
     }
-    
+
     .timeline-description {
       font-size: var(--text-base);
       color: var(--color-text-secondary);
       line-height: 1.7;
     }
-    
+
     .timeline-icon {
       font-size: 2rem;
       margin-bottom: var(--space-md);
     }
-    
+
     /* Quote Section */
     .story-quote {
       padding: var(--space-3xl) var(--space-lg);
       background: var(--color-bg-primary);
       text-align: center;
     }
-    
+
     .story-quote-content {
       max-width: 800px;
       margin: 0 auto;
     }
-    
+
     .story-quote-text {
       font-size: var(--text-2xl);
       font-weight: 500;
@@ -178,18 +179,18 @@
       color: var(--color-text-primary);
       margin-bottom: var(--space-lg);
     }
-    
+
     .story-quote-author {
       font-size: var(--text-base);
       color: var(--color-text-secondary);
     }
-    
+
     /* Stats Section */
     .story-stats {
       padding: var(--space-3xl) var(--space-lg);
       background: var(--color-bg-secondary);
     }
-    
+
     .story-stats-grid {
       max-width: var(--max-width);
       margin: 0 auto;
@@ -198,23 +199,23 @@
       gap: var(--space-xl);
       text-align: center;
     }
-    
+
     .story-stat-item {
       padding: var(--space-xl);
     }
-    
+
     .story-stat-value {
       font-size: var(--text-4xl);
       font-weight: 700;
       color: var(--color-text-primary);
       margin-bottom: var(--space-xs);
     }
-    
+
     .story-stat-label {
       font-size: var(--text-sm);
       color: var(--color-text-secondary);
     }
-    
+
     /* Back Link */
     .back-link {
       display: inline-flex;
@@ -225,43 +226,44 @@
       margin-bottom: var(--space-lg);
       transition: color var(--transition-fast);
     }
-    
+
     .back-link:hover {
       color: var(--color-text-primary);
     }
-    
+
     .back-link svg {
       width: 16px;
       height: 16px;
     }
-    
+
     /* Responsive */
     @media (max-width: 768px) {
       .timeline-line {
         left: 20px;
       }
-      
+
       .timeline-item,
       .timeline-item:nth-child(odd),
       .timeline-item:nth-child(even) {
         flex-direction: column;
         padding-left: 50px;
       }
-      
+
       .timeline-content {
         width: 100%;
       }
-      
+
       .timeline-dot {
         left: 20px;
       }
-      
+
       .story-stats-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
   </style>
 </head>
+
 <body>
   <!-- Header -->
   <header class="header">
@@ -273,40 +275,57 @@
       <div class="header-right">
         <nav>
           <ul class="nav-links">
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="index.html#highlights">Điểm nổi bật</a></li>
-            <li><a href="index.html#specs">Thông số</a></li>
-            <li><a href="story.html" class="active">Câu chuyện</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#highlights">Highlights</a></li>
+            <li><a href="index.html#specs">Specifications</a></li>
+            <li><a href="story.html" class="active">Our Story</a></li>
           </ul>
         </nav>
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
           <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"/>
-            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
           </svg>
           <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
           </svg>
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
     </div>
   </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" data-mobile-link>Home</a></li>
+      <li><a href="index.html#highlights" data-mobile-link>Highlights</a></li>
+      <li><a href="index.html#specs" data-mobile-link>Specifications</a></li>
+      <li><a href="story.html" data-mobile-link>Our Story</a></li>
+    </ul>
+  </nav>
 
   <main>
     <!-- Hero Section -->
     <section class="story-hero">
       <a href="index.html" class="back-link">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M19 12H5M12 19l-7-7 7-7"/>
+          <path d="M19 12H5M12 19l-7-7 7-7" />
         </svg>
-        Quay lại trang chủ
+        Back to Home
       </a>
-      <p class="story-hero-eyebrow">Câu chuyện thương hiệu</p>
+      <p class="story-hero-eyebrow">Brand Story</p>
       <h1 class="story-hero-title">
-        <span class="gradient-text">Hành Trình Dự Án</span>
+        <span class="gradient-text">Project Journey</span>
       </h1>
       <p class="story-hero-subtitle">
-        Từ ý tưởng đến hiện thực — Một năm làm việc cật lực, những giấc mơ và những đêm không ngủ.
+        From idea to reality — A year of hard work, dreams, and sleepless nights.
       </p>
     </section>
 
@@ -315,19 +334,19 @@
       <div class="story-stats-grid">
         <div class="story-stat-item">
           <div class="story-stat-value">410</div>
-          <div class="story-stat-label">Trang thiết kế Figma</div>
+          <div class="story-stat-label">Figma Design Pages</div>
         </div>
         <div class="story-stat-item">
           <div class="story-stat-value">12+</div>
-          <div class="story-stat-label">Tháng phát triển</div>
+          <div class="story-stat-label">Months of Development</div>
         </div>
         <div class="story-stat-item">
           <div class="story-stat-value">∞</div>
-          <div class="story-stat-label">Đêm thức trắng</div>
+          <div class="story-stat-label">Sleepless Nights</div>
         </div>
         <div class="story-stat-item">
           <div class="story-stat-value">1</div>
-          <div class="story-stat-label">Giấc mơ lớn</div>
+          <div class="story-stat-label">Big Dream</div>
         </div>
       </div>
     </section>
@@ -336,67 +355,77 @@
     <section class="timeline-section">
       <div class="timeline-container">
         <div class="timeline-line"></div>
-        
+
         <!-- Milestone 1 -->
         <div class="timeline-item">
           <div class="timeline-content">
             <div class="timeline-icon">🎨</div>
-            <span class="timeline-date">Tháng 3/2025</span>
+            <span class="timeline-date">March 2025</span>
             <h3 class="timeline-title">
               <span class="timeline-number">1</span>
-              Hoàn thiện Giao diện
+              UI Completion
             </h3>
             <p class="timeline-description">
-              Những tháng ngày tâm huyết nối tiếp nhau, em đã tinh chỉnh từng chi tiết nhỏ, thiết kế từng pixel và trau chuốt mọi yếu tố của trải nghiệm người dùng. Cuối cùng, em đã hoàn thành phần UI (Giao diện người dùng) - một dự án Figma khổng lồ bao gồm tới <strong>410 trang thiết kế</strong>.
+              After months of dedication, I refined every little detail, designed every pixel, and polished every
+              element of the user experience. Finally, I completed the UI (User Interface) - a massive Figma project
+              containing up to <strong>410 design pages</strong>.
             </p>
           </div>
           <div class="timeline-dot"></div>
         </div>
-        
+
         <!-- Milestone 2 -->
         <div class="timeline-item">
           <div class="timeline-content">
             <div class="timeline-icon">⌨️</div>
-            <span class="timeline-date">Tháng 3 - 31/5/2025</span>
+            <span class="timeline-date">March - May 31, 2025</span>
             <h3 class="timeline-title">
               <span class="timeline-number">2</span>
-              Thử thách Phần cứng
+              Hardware Challenge
             </h3>
             <p class="timeline-description">
-              Ngay sau đó, em bước vào giai đoạn phát triển phần cứng, tập trung đặc biệt vào bàn phím - một trong những linh kiện khó nhằn nhất. Nhóm cần một thứ gì đó hoàn toàn mới mẻ: một chiếc bàn phím hoạt động bình thường nhưng có thể thay đổi các giá trị linh hoạt như một chú tắc kè hoa. Sau hàng chục mẫu thử nghiệm, cuối cùng cả nhóm đã chốt lại phương án sử dụng <strong>cơ chế cao su đàn hồi nguyên khối (unibody)</strong> kết hợp với các keycap bán trong suốt.
+              Right after that, I moved into the hardware development phase, focusing especially on the keyboard - one
+              of the most challenging components. The team needed something completely new: a keyboard that functions
+              normally but can change values dynamically like a chameleon. After dozens of prototypes, the team finally
+              settled on using a <strong>unibody elastic rubber mechanism</strong> combined with semi-transparent
+              keycaps.
             </p>
           </div>
           <div class="timeline-dot"></div>
         </div>
-        
+
         <!-- Milestone 3 -->
         <div class="timeline-item">
           <div class="timeline-content">
             <div class="timeline-icon">⏸️</div>
-            <span class="timeline-date">Tháng 6/2025</span>
+            <span class="timeline-date">June 2025</span>
             <h3 class="timeline-title">
               <span class="timeline-number">3</span>
-              Giai đoạn Tạm hoãn
+              Pause Phase
             </h3>
             <p class="timeline-description">
-              Đến thời điểm này, hầu hết phần cứng đã hoàn tất, chỉ trừ bo mạch chủ (PCB). Dù đã nỗ lực nhiều lần, nhóm vẫn không thể hoàn thiện nó. Kế hoạch ban đầu là làm xong PCB, đặt linh kiện và lắp ráp bản mẫu chức năng đầu tiên để bắt đầu phát triển phần mềm.<br><br>
-              Tuy nhiên, mọi việc không phải lúc nào cũng theo kế hoạch. Khi hồ sơ ứng tuyển đại học và áp lực của năm cuối cấp ập đến, tiến độ dự án buộc phải chững lại.
+              By this point, most of the hardware was complete, except for the motherboard (PCB). Despite many efforts,
+              the team couldn't finish it. The original plan was to complete the PCB, place components, and assemble the
+              first functional prototype to start software development.<br><br>
+              However, things don't always go according to plan. When university applications and senior year pressures
+              arrived, the project's progress had to slow down.
             </p>
           </div>
           <div class="timeline-dot"></div>
         </div>
-        
+
         <!-- Milestone 4 -->
         <div class="timeline-item">
           <div class="timeline-content">
             <div class="timeline-icon">🌟</div>
-            <span class="timeline-date">Tháng 9/2025 - Nay</span>
+            <span class="timeline-date">September 2025 - Present</span>
             <h3 class="timeline-title">
               <span class="timeline-number">4</span>
-              Kết thúc và Khởi đầu mới
+              Ending and New Beginning
             </h3>
             <p class="timeline-description">
-              Cuối cùng, chúng em đã đưa ra một quyết định vừa buồn vừa vui: gói gọn dự án lại dưới hình thức một trang web. Đây là một <strong>"đài tưởng niệm số"</strong> tri ân cho một năm làm việc cật lực, những giấc mơ và những đêm không ngủ.
+              Finally, we made a decision that was both sad and joyful: to wrap up the project in the form of a website.
+              This is a <strong>"digital memorial"</strong> honoring a year of hard work, dreams, and sleepless nights.
             </p>
           </div>
           <div class="timeline-dot"></div>
@@ -408,9 +437,10 @@
     <section class="story-quote">
       <div class="story-quote-content">
         <p class="story-quote-text">
-          "Dự án này không chỉ là một sản phẩm công nghệ — đó là minh chứng cho đam mê, sự kiên trì và tinh thần không bỏ cuộc của tuổi trẻ."
+          "This project is not just a technology product — it's a testament to passion, perseverance, and the
+          never-give-up spirit of youth."
         </p>
-        <p class="story-quote-author">— Đội ngũ Peculiar</p>
+        <p class="story-quote-author">— The Peculiar Team</p>
       </div>
     </section>
   </main>
@@ -422,9 +452,9 @@
         <p class="footer-copyright">© 2026 Peculiar. All rights reserved.</p>
         <a href="index.html" class="back-link" style="margin-bottom: 0;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M19 12H5M12 19l-7-7 7-7"/>
+            <path d="M19 12H5M12 19l-7-7 7-7" />
           </svg>
-          Quay lại trang chủ
+          Back to Home
         </a>
         <p class="footer-tagline">Designed for Education 🎓</p>
       </div>
@@ -433,4 +463,5 @@
 
   <script src="../js/main.js"></script>
 </body>
+
 </html>

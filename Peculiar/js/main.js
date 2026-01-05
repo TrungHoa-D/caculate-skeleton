@@ -59,6 +59,55 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ═══════════════════════════════════════════════════════════════
+  // MOBILE NAVIGATION MENU
+  // ═══════════════════════════════════════════════════════════════
+  
+  const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+  const mobileNavLinks = document.querySelectorAll('[data-mobile-link]');
+  
+  if (mobileMenuToggle && mobileNav) {
+    // Toggle mobile menu
+    mobileMenuToggle.addEventListener('click', () => {
+      const isOpen = mobileMenuToggle.classList.toggle('active');
+      mobileNav.classList.toggle('active');
+      
+      // Prevent body scroll when menu is open
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+      
+      // Update aria-label
+      mobileMenuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    });
+    
+    // Close menu when clicking on a link
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenuToggle.classList.remove('active');
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+    
+    // Close menu on window resize to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        mobileMenuToggle.classList.remove('active');
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Close menu when pressing Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
+        mobileMenuToggle.classList.remove('active');
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
+  // ═══════════════════════════════════════════════════════════════
   // SCROLL ANIMATIONS (Intersection Observer)
   // ═══════════════════════════════════════════════════════════════
   
