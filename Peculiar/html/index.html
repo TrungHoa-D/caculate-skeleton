@@ -8,6 +8,10 @@
   <meta name="theme-color" content="#FFFFFF">
   <title>Logic Pocket | Peculiar</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../img/peculiar-logo.png">
+  <link rel="apple-touch-icon" href="../img/peculiar-logo.png">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -250,9 +254,11 @@
       <div class="header-right">
         <nav>
           <ul class="nav-links">
-            <li><a href="#highlights">Highlights</a></li>
-            <li><a href="#features">Features</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#highlights">UI</a></li>
+            <li><a href="#features">Functionality</a></li>
             <li><a href="#specs">Specifications</a></li>
+            <li><a href="#overview">Overview</a></li>
             <li><a href="#story">Our Story</a></li>
           </ul>
         </nav>
@@ -269,9 +275,11 @@
   <!-- Mobile Navigation -->
   <nav class="mobile-nav" id="mobile-nav">
     <ul class="mobile-nav-links">
-      <li><a href="#highlights" data-mobile-link>Highlights</a></li>
-      <li><a href="#features" data-mobile-link>Features</a></li>
+      <li><a href="#design" data-mobile-link>Design</a></li>
+      <li><a href="#highlights" data-mobile-link>UI</a></li>
+      <li><a href="#features" data-mobile-link>Functionality</a></li>
       <li><a href="#specs" data-mobile-link>Specifications</a></li>
+      <li><a href="#overview" data-mobile-link>Overview</a></li>
       <li><a href="#story" data-mobile-link>Our Story</a></li>
     </ul>
   </nav>
@@ -282,253 +290,485 @@
          SECTION 1: HERO
          ═══════════════════════════════════════════════════════════════ -->
     <section class="hero" id="home">
+      <!-- Hero Title -->
       <h1 class="hero-title">
         <span class="gradient-text">Logic Pocket</span>
       </h1>
-      <p class="hero-subtitle">Next-generation smart learning device, designed specifically for the educational
-        environment</p>
 
-      <div class="scroll-indicator">
-        <span>Explore</span>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 5v14M19 12l-7 7-7-7" />
-        </svg>
+      <!-- Hero Subtitle Block -->
+      <div class="hero-subtitle-block">
+        <p>The perfect calculator for everyone</p>
+        <p>A concept product by a team of 2 high schoolers</p>
+      </div>
+
+      <!-- Hero Image with overlapping CTA -->
+      <div class="hero-visual-wrapper">
+        <div class="hero-image-placeholder">
+          <div class="placeholder-content">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <p class="placeholder-text">Product Image</p>
+            <span class="placeholder-note">Hand holding calculator with graph display</span>
+          </div>
+        </div>
+
+        <!-- CTA Button overlapping image -->
+        <a href="#highlights" class="hero-cta-button">
+          <span>We welcome you to take a glimpse of our vision</span>
+        </a>
       </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════════════════════
-         SECTION 2: HIGHLIGHTS GALLERY
+         SECTION 1.5: TIMELESS DESIGN
          ═══════════════════════════════════════════════════════════════ -->
-    <section class="highlights" id="highlights">
-      <div class="highlights-header">
-        <h2><span class="gradient-text">Highlights.</span></h2>
-        <p class="text-secondary">Discover the special features</p>
+    <section class="timeless-design" id="design">
+      <div class="timeless-design-header">
+        <h2>Its a <span class="gradient-text">Timeless</span> Design</h2>
       </div>
 
-      <div class="highlights-gallery" id="highlights-gallery">
-        <div class="highlight-card highlight-card--display animate-on-scroll" data-index="0">
-          <span class="highlight-card-icon">📱</span>
-          <div class="highlight-card-content">
-            <h3 class="highlight-card-title">3.4" IPS Display</h3>
-            <p class="highlight-card-desc">700 nits, readable in sunlight</p>
+      <div class="timeless-design-container">
+        <!-- Left Side: Accordion Tabs -->
+        <div class="design-accordion">
+          <!-- Design Tab -->
+          <div class="accordion-item active" data-tab="design">
+            <button class="accordion-trigger">
+              <span class="accordion-icon"></span>
+              <span class="accordion-title">Design</span>
+            </button>
+            <div class="accordion-content">
+              <p>An industrial design language that reimagines the calculator with a modern refined aesthetic. Soft curves, smooth surfaces and tactile analog controls create a pleasant, intuitive user experience.</p>
+            </div>
+          </div>
+
+          <!-- Aluminium Tab -->
+          <div class="accordion-item" data-tab="aluminium">
+            <button class="accordion-trigger">
+              <span class="accordion-icon"></span>
+              <span class="accordion-title">Aluminium</span>
+            </button>
+            <div class="accordion-content">
+              <p>Crafted from premium Aluminium, the material offers strength, efficient heat dissipation, and a refined tactile feel.</p>
+            </div>
+          </div>
+
+          <!-- Keyboard Tab -->
+          <div class="accordion-item" data-tab="keyboard">
+            <button class="accordion-trigger">
+              <span class="accordion-icon"></span>
+              <span class="accordion-title">Keyboard</span>
+            </button>
+            <div class="accordion-content">
+              <p>A revolutionary typing system featuring translucent keycaps and a breakthrough mechanism that allows each key to adapt and represent different values depending on the context.</p>
+            </div>
+          </div>
+
+          <!-- Scroll Wheel Tab -->
+          <div class="accordion-item" data-tab="scroll-wheel">
+            <button class="accordion-trigger">
+              <span class="accordion-icon"></span>
+              <span class="accordion-title">Scroll wheel</span>
+            </button>
+            <div class="accordion-content">
+              <p>A tactile analog scroll wheel offers precise, intuitive control for a more engaging user experience.</p>
+            </div>
+          </div>
+
+          <!-- Power Switch Tab -->
+          <div class="accordion-item" data-tab="power-switch">
+            <button class="accordion-trigger">
+              <span class="accordion-icon"></span>
+              <span class="accordion-title">Power Switch</span>
+            </button>
+            <div class="accordion-content">
+              <p>A simple yet elegant way to activate and deactivate the product.</p>
+            </div>
+          </div>
+
+          <!-- Shift Button Tab -->
+          <div class="accordion-item" data-tab="shift-button">
+            <button class="accordion-trigger">
+              <span class="accordion-icon"></span>
+              <span class="accordion-title">Shift button</span>
+            </button>
+            <div class="accordion-content">
+              <p>A dedicated button that extends functionality, allowing quick access to secondary functions across the entire keyboard.</p>
+            </div>
           </div>
         </div>
 
-        <div class="highlight-card highlight-card--keypad animate-on-scroll" data-index="1">
-          <span class="highlight-card-icon">⌨️</span>
-          <div class="highlight-card-content">
-            <h3 class="highlight-card-title">20 Smart Keys</h3>
-            <p class="highlight-card-desc">IPS back display, context-aware</p>
+        <!-- Right Side: Fixed Image -->
+        <div class="design-image-area">
+          <div class="design-image-wrapper">
+            <!-- Image placeholders for each tab -->
+            <div class="design-image active" data-image="design">
+              <div class="image-placeholder">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21 15 16 10 5 21"/>
+                </svg>
+                <span>3D Model</span>
+              </div>
+            </div>
+            <div class="design-image" data-image="aluminium">
+              <div class="image-placeholder">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21 15 16 10 5 21"/>
+                </svg>
+                <span>Aluminium Chassis</span>
+              </div>
+            </div>
+            <div class="design-image" data-image="keyboard">
+              <div class="image-placeholder">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21 15 16 10 5 21"/>
+                </svg>
+                <span>Keyboard</span>
+              </div>
+            </div>
+            <div class="design-image" data-image="scroll-wheel">
+              <div class="image-placeholder">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21 15 16 10 5 21"/>
+                </svg>
+                <span>Scroll Wheel</span>
+              </div>
+            </div>
+            <div class="design-image" data-image="power-switch">
+              <div class="image-placeholder">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21 15 16 10 5 21"/>
+                </svg>
+                <span>Power Switch</span>
+              </div>
+            </div>
+            <div class="design-image" data-image="shift-button">
+              <div class="image-placeholder">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21 15 16 10 5 21"/>
+                </svg>
+                <span>Shift Button</span>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="highlight-card highlight-card--haptic animate-on-scroll" data-index="2">
-          <span class="highlight-card-icon">🎮</span>
-          <div class="highlight-card-content">
-            <h3 class="highlight-card-title">Haptic feedback</h3>
-            <p class="highlight-card-desc">Feel every subtle touch</p>
-          </div>
-        </div>
-
-        <div class="highlight-card highlight-card--processor animate-on-scroll" data-index="3">
-          <span class="highlight-card-icon">⚡</span>
-          <div class="highlight-card-content">
-            <h3 class="highlight-card-title">Quad-core 2.0GHz</h3>
-            <p class="highlight-card-desc">8GB RAM, 32GB storage</p>
-          </div>
-        </div>
-
-        <div class="highlight-card highlight-card--battery animate-on-scroll" data-index="4">
-          <span class="highlight-card-icon">🔋</span>
-          <div class="highlight-card-content">
-            <h3 class="highlight-card-title">3,500mAh</h3>
-            <p class="highlight-card-desc">All-day use without worry</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Carousel Navigation Controls -->
-      <div class="carousel-controls">
-        <div class="carousel-dots">
-          <button class="carousel-dot active" data-index="0" aria-label="Slide 1">
-            <span class="dot-progress"></span>
-          </button>
-          <button class="carousel-dot" data-index="1" aria-label="Slide 2">
-            <span class="dot-progress"></span>
-          </button>
-          <button class="carousel-dot" data-index="2" aria-label="Slide 3">
-            <span class="dot-progress"></span>
-          </button>
-          <button class="carousel-dot" data-index="3" aria-label="Slide 4">
-            <span class="dot-progress"></span>
-          </button>
-          <button class="carousel-dot" data-index="4" aria-label="Slide 5">
-            <span class="dot-progress"></span>
-          </button>
-        </div>
-        <button class="carousel-play-pause" id="carousel-play-pause" aria-label="Pause carousel">
-          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor">
-            <rect x="6" y="4" width="4" height="16" rx="1" />
-            <rect x="14" y="4" width="4" height="16" rx="1" />
-          </svg>
-          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M8 5v14l11-7z" />
-          </svg>
-        </button>
       </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════════════════════
-         SECTION 3: DISPLAY FEATURE
+         SECTION 2: BEAUTIFUL UI
          ═══════════════════════════════════════════════════════════════ -->
-    <section class="feature-section feature-section--display" id="features">
-      <div class="feature-content">
-        <div class="feature-text animate-on-scroll">
-          <span class="feature-label">Display</span>
-          <h2 class="feature-title">3.4 inches.<br>Brilliant in sunlight.</h2>
-          <p class="feature-description">
-            Full-color IPS display with 480 × 480 pixel resolution, perfect square ratio for learning interfaces.
-            700 nits brightness allows clear reading even outdoors, combined with anti-glare coating to reduce eye
-            strain.
+    <section class="beautiful-ui" id="highlights">
+      <div class="beautiful-ui-header">
+        <h2>Its a <span class="gradient-text">Beautiful</span> reimagined UI</h2>
+        <p class="beautiful-ui-subtitle">Seamless User Experience</p>
+      </div>
+
+      <div class="ui-cards-container">
+        <!-- Card 1: Calculator Display -->
+        <div class="ui-card animate-on-scroll">
+          <div class="ui-card-media">
+            <div class="ui-placeholder">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <polygon points="23 7 16 12 23 17 23 7"/>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+              </svg>
+              <span>Video/GIF</span>
+            </div>
+          </div>
+          <p class="ui-card-label">video/gif (from figma)</p>
+        </div>
+
+        <!-- Card 2: Haptic/Vibration -->
+        <div class="ui-card animate-on-scroll">
+          <div class="ui-card-media">
+            <div class="ui-placeholder">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <polygon points="23 7 16 12 23 17 23 7"/>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+              </svg>
+              <span>Video/GIF</span>
+            </div>
+          </div>
+          <p class="ui-card-label">vid/gif (from figma)</p>
+        </div>
+
+        <!-- Card 3: Sound -->
+        <div class="ui-card animate-on-scroll">
+          <div class="ui-card-media">
+            <div class="ui-placeholder">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <polygon points="23 7 16 12 23 17 23 7"/>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+              </svg>
+              <span>Video/GIF</span>
+            </div>
+          </div>
+          <p class="ui-card-label">vid/gif (from figma)</p>
+        </div>
+      </div>
+
+      <div class="beautiful-ui-description">
+        <p>A refreshing new look and feel, paired with a simple, playful, and user-friendly interface — Together creating an experience that's both delightful and addictive to use.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 2.1: POWERFUL MACHINE - BIG DISPLAY
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="powerful-machine" id="powerful-machine">
+      <div class="powerful-machine-header animate-on-scroll">
+        <h2>Its a <span class="gradient-text">Powerful</span> Machine</h2>
+      </div>
+
+      <div class="powerful-machine-content">
+        <div class="display-showcase animate-on-scroll">
+          <div class="display-device">
+            <div class="display-screen">
+              <div class="display-placeholder">
+                <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5">
+                  <path d="M3 3v18h18"/>
+                  <path d="M18 9l-5 5-4-4-6 6" stroke="#ff4757" stroke-width="2"/>
+                </svg>
+                <span>(from figma)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="display-info animate-on-scroll">
+          <h3 class="display-title">Big display</h3>
+          <p class="display-description">
+            A large 3.4 inch display with a crisp 480 × 480 resolution, up to 700 nits of brightness, enhanced with an anti-glare coating — Setting a new standard for calculator displays.
           </p>
-          <div class="feature-stats">
-            <div class="feature-stat">
-              <div class="feature-stat-value">700</div>
-              <div class="feature-stat-label">nits</div>
-            </div>
-            <div class="feature-stat">
-              <div class="feature-stat-value">480×480</div>
-              <div class="feature-stat-label">pixels</div>
-            </div>
-            <div class="feature-stat">
-              <div class="feature-stat-value">IPS</div>
-              <div class="feature-stat-label">wide viewing</div>
-            </div>
-          </div>
-        </div>
-        <div class="feature-visual">
-          <div class="feature-mockup animate-on-scroll">📱</div>
         </div>
       </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════════════════════
-         SECTION 4: KEYPAD FEATURE
+         SECTION 2.2: EVERLASTING BATTERY
          ═══════════════════════════════════════════════════════════════ -->
-    <section class="feature-section feature-section--keypad">
-      <div class="feature-content feature-content--reverse">
-        <div class="feature-text animate-on-scroll">
-          <span class="feature-label">Keypad</span>
-          <h2 class="feature-title">20 keys.<br>Endless possibilities.</h2>
-          <p class="feature-description">
-            Physical 20-key keypad with IPS display behind, changing icons based on usage context.
-            From mathematical calculations to media controls, each key adapts to your needs.
-          </p>
-          <div class="feature-stats">
-            <div class="feature-stat">
-              <div class="feature-stat-value">20</div>
-              <div class="feature-stat-label">physical keys</div>
+    <section class="everlasting-battery">
+      <div class="battery-header animate-on-scroll">
+        <h2>Ever <span class="gradient-text">lasting</span> Battery</h2>
+      </div>
+
+      <div class="battery-content">
+        <div class="battery-device animate-on-scroll">
+          <div class="battery-calculator">
+            <div class="battery-screen">
+              <p>x2 speed of calculation</p>
+              <span>(from figma)</span>
             </div>
-            <div class="feature-stat">
-              <div class="feature-stat-value">IPS</div>
-              <div class="feature-stat-label">back display</div>
+            <div class="battery-keys">
+              <div class="key-row">
+                <span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span>
+              </div>
+              <div class="key-row">
+                <span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span>
+              </div>
+              <div class="key-row">
+                <span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span>
+              </div>
+              <div class="key-row">
+                <span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span>
+              </div>
+              <div class="key-row">
+                <span class="key"></span><span class="key"></span><span class="key"></span><span class="key"></span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="feature-visual">
-          <div class="feature-mockup animate-on-scroll">⌨️</div>
+
+        <div class="battery-stats animate-on-scroll">
+          <div class="battery-stat">
+            <span class="stat-label">up to</span>
+            <span class="stat-value">2 weeks</span>
+            <span class="stat-desc">of use time/charge</span>
+          </div>
+          <div class="battery-stat">
+            <span class="stat-label">up to</span>
+            <span class="stat-value">100%</span>
+            <span class="stat-desc">charge in &lt;2 hours</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════════════════════
-         SECTION 5: HAPTIC FEATURE
+         SECTION 2.3: FAST, IMMERSIVE, TACTILE
          ═══════════════════════════════════════════════════════════════ -->
-    <section class="feature-section feature-section--haptic">
-      <div class="feature-content">
-        <div class="feature-text animate-on-scroll">
-          <span class="feature-label">Touch</span>
-          <h2 class="feature-title">Feel.<br>Every subtle touch.</h2>
-          <p class="feature-description">
-            Haptic feedback system with LRA motor and DA7280 controller chip for precise tactile response.
-            AS5600 magnetic rotary encoder with subtle vibration feedback, delivering a completely new control
-            experience.
-          </p>
-          <div class="feature-stats">
-            <div class="feature-stat">
-              <div class="feature-stat-value">LRA</div>
-              <div class="feature-stat-label">haptic motor</div>
-            </div>
-            <div class="feature-stat">
-              <div class="feature-stat-value">DA7280</div>
-              <div class="feature-stat-label">controller</div>
+    <section class="fit-section">
+      <div class="fit-cards-container">
+        <!-- Fast Card -->
+        <div class="fit-card animate-on-scroll">
+          <h3 class="fit-card-title">Fast</h3>
+          <div class="fit-card-visual">
+            <div class="fit-placeholder">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                <text x="12" y="14" font-size="6" text-anchor="middle" fill="currentColor">RK3568</text>
+              </svg>
+              <span>(use AI pic)</span>
             </div>
           </div>
+          <p class="fit-card-desc">Powered by the Rockchip RK3568 and up to 8GB of RAM for smooth performance.</p>
         </div>
-        <div class="feature-visual">
-          <div class="feature-mockup animate-on-scroll">🎮</div>
+
+        <!-- Immersive Card -->
+        <div class="fit-card animate-on-scroll">
+          <h3 class="fit-card-title">Immersive</h3>
+          <div class="fit-card-visual">
+            <div class="fit-placeholder">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <rect x="2" y="6" width="20" height="12" rx="2"/>
+                <ellipse cx="8" cy="12" rx="3" ry="3"/>
+                <ellipse cx="16" cy="12" rx="3" ry="3"/>
+              </svg>
+              <span>Picture</span>
+            </div>
+          </div>
+          <p class="fit-card-desc">A built-in 10W speaker delivers an immersive sonic experience.</p>
+        </div>
+
+        <!-- Tactile Card -->
+        <div class="fit-card animate-on-scroll">
+          <h3 class="fit-card-title">Tactile</h3>
+          <div class="fit-card-visual">
+            <div class="fit-placeholder">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <rect x="5" y="3" width="14" height="18" rx="2"/>
+                <rect x="7" y="5" width="10" height="8" rx="1"/>
+                <text x="12" y="11" font-size="4" text-anchor="middle" fill="currentColor">2+8=10</text>
+              </svg>
+              <span>(pic from figma)</span>
+            </div>
+          </div>
+          <p class="fit-card-desc">A linear resonant actuator to make each touch remarkably tactile and responsive.</p>
         </div>
       </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════════════════════
-         SECTION 6: PERFORMANCE FEATURE
+         SECTION 3: FUNCTIONALITY
          ═══════════════════════════════════════════════════════════════ -->
-    <section class="feature-section feature-section--performance">
-      <div class="feature-content feature-content--reverse">
-        <div class="feature-text animate-on-scroll">
-          <span class="feature-label">Performance</span>
-          <h2 class="feature-title">Powerful.<br>Compact.</h2>
-          <p class="feature-description">
-            Rockchip RK3568 chip with 4 ARM Cortex-A55 cores clocked at 2.0GHz, combined with 8GB LPDDR4 RAM
-            and 32GB eMMC 5.1 storage. Enough power for all learning and entertainment tasks.
-          </p>
-          <div class="feature-stats">
-            <div class="feature-stat">
-              <div class="feature-stat-value">4</div>
-              <div class="feature-stat-label">CPU cores</div>
-            </div>
-            <div class="feature-stat">
-              <div class="feature-stat-value">8GB</div>
-              <div class="feature-stat-label">RAM</div>
-            </div>
-            <div class="feature-stat">
-              <div class="feature-stat-value">32GB</div>
-              <div class="feature-stat-label">storage</div>
-            </div>
-          </div>
-        </div>
-        <div class="feature-visual">
-          <div class="feature-mockup animate-on-scroll">⚡</div>
-        </div>
+    <section class="functionality-section" id="features">
+      <div class="functionality-header animate-on-scroll">
+        <h2><span class="gradient-text">Functionality</span></h2>
       </div>
-    </section>
 
-    <!-- ═══════════════════════════════════════════════════════════════
-         SECTION 7: CONNECTIVITY FEATURE
-         ═══════════════════════════════════════════════════════════════ -->
-    <section class="feature-section feature-section--connectivity">
-      <div class="feature-content">
-        <div class="feature-text animate-on-scroll">
-          <span class="feature-label">Connectivity</span>
-          <h2 class="feature-title">Stay connected.<br>Anytime, anywhere.</h2>
-          <p class="feature-description">
-            Wi-Fi 5 (802.11ac) dual-band 2.4GHz and 5GHz for fast and stable internet connection.
-            Bluetooth 5.0 allows easy connection to headphones, speakers, and other peripherals.
-          </p>
-          <div class="feature-stats">
-            <div class="feature-stat">
-              <div class="feature-stat-value">Wi-Fi 5</div>
-              <div class="feature-stat-label">dual-band</div>
+      <div class="functionality-content">
+        <!-- Calculator Device -->
+        <div class="func-calculator animate-on-scroll">
+          <div class="func-screen">
+            <!-- Screen content changes based on selected tab -->
+            <div class="func-screen-content active" data-func="basic">
+              <p class="func-formula">2/3 + 6×(2q-18)</p>
+              <p class="func-result">= 36.4</p>
+              <span class="func-note">& similar type</span>
             </div>
-            <div class="feature-stat">
-              <div class="feature-stat-value">BT 5.0</div>
-              <div class="feature-stat-label">Bluetooth</div>
+            <div class="func-screen-content" data-func="graph">
+              <div class="func-graph-placeholder">
+                <svg viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="1">
+                  <line x1="10" y1="50" x2="90" y2="50" opacity="0.3"/>
+                  <line x1="10" y1="10" x2="10" y2="50" opacity="0.3"/>
+                  <path d="M15 45 Q30 10 50 30 T85 15" stroke="#ff4757" stroke-width="2" fill="none"/>
+                  <path d="M15 40 L85 20" stroke="#3498db" stroke-width="1.5" fill="none"/>
+                </svg>
+                <span>vid/gif (from figma)</span>
+              </div>
+            </div>
+            <div class="func-screen-content" data-func="algebra">
+              <p class="func-formula">x² × 2 = 8</p>
+              <p class="func-result">x = 2</p>
+            </div>
+            <div class="func-screen-content" data-func="calculus">
+              <p class="func-formula">∫x²dx</p>
+              <p class="func-result">= x³/3 + C</p>
+            </div>
+            <div class="func-screen-content" data-func="convert">
+              <p class="func-formula">2cm + 4dm</p>
+              <p class="func-result">= 42cm</p>
+            </div>
+            <div class="func-screen-content" data-func="others">
+              <p class="func-formula">Σ (i=1 to ∞)</p>
+              <p class="func-result">= 241</p>
             </div>
           </div>
+          <div class="func-keypad-visual">
+            <span>vid/gif (from figma)</span>
+          </div>
+          <div class="func-keys">
+            <div class="func-key-row"><span></span><span></span><span></span><span></span></div>
+            <div class="func-key-row"><span></span><span></span><span></span><span></span></div>
+            <div class="func-key-row"><span></span><span></span><span></span><span></span></div>
+            <div class="func-key-row"><span></span><span></span><span></span><span></span></div>
+            <div class="func-key-row"><span></span><span></span><span></span><span></span></div>
+          </div>
         </div>
-        <div class="feature-visual">
-          <div class="feature-mockup animate-on-scroll">📡</div>
+
+        <!-- Tab Bar -->
+        <div class="func-tabs animate-on-scroll">
+          <button class="func-tab active" data-func="basic">
+            <span class="func-tab-icon">+-×÷</span>
+            <span class="func-tab-label">Basic<br>Calculation</span>
+          </button>
+          <button class="func-tab" data-func="graph">
+            <span class="func-tab-icon">📈</span>
+            <span class="func-tab-label">Graph</span>
+          </button>
+          <button class="func-tab" data-func="algebra">
+            <span class="func-tab-icon">f(x)</span>
+            <span class="func-tab-label">Algebra</span>
+          </button>
+          <button class="func-tab" data-func="calculus">
+            <span class="func-tab-icon">dy/dx</span>
+            <span class="func-tab-label">Calculus</span>
+          </button>
+          <button class="func-tab" data-func="convert">
+            <span class="func-tab-icon">(cm)</span>
+            <span class="func-tab-label">Unit<br>Convert</span>
+          </button>
+          <button class="func-tab" data-func="others">
+            <span class="func-tab-icon">Σ</span>
+            <span class="func-tab-label">Others</span>
+          </button>
+        </div>
+
+        <!-- Description -->
+        <div class="func-description animate-on-scroll">
+          <p class="func-desc-text active" data-func="basic">
+            Perform basic calculations with ease including arithmetic across different types of numbers.
+          </p>
+          <p class="func-desc-text" data-func="graph">
+            Graph complex functions with ease and precision.
+          </p>
+          <p class="func-desc-text" data-func="algebra">
+            Solve algebraic instantly with automatic detection.
+          </p>
+          <p class="func-desc-text" data-func="calculus">
+            Handle Calculus problems smoothly with essential operations.
+          </p>
+          <p class="func-desc-text" data-func="convert">
+            Calculate and convert between different units with ease.
+          </p>
+          <p class="func-desc-text" data-func="others">
+            Perform statistical, series, summation, and many more.
+          </p>
         </div>
       </div>
     </section>
@@ -649,115 +889,328 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════════════════════
+         OVERVIEW SECTION
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="overview-section" id="overview">
+      <div class="overview-header animate-on-scroll">
+        <h2><span class="gradient-text">Overview</span></h2>
+      </div>
+      <div class="overview-grid">
+        <!-- Card 1: Timeless Design -->
+        <div class="overview-card animate-on-scroll">
+          <h3 class="overview-card-title">Timeless Design</h3>
+          <div class="overview-card-visual">
+            <div class="overview-placeholder">
+              <svg width="80" height="120" viewBox="0 0 80 120" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="10" y="5" width="60" height="110" rx="10"/>
+                <rect x="15" y="10" width="50" height="45" rx="5"/>
+                <circle cx="25" cy="70" r="6"/><circle cx="40" cy="70" r="6"/><circle cx="55" cy="70" r="6"/>
+                <circle cx="25" cy="85" r="6"/><circle cx="40" cy="85" r="6"/><circle cx="55" cy="85" r="6"/>
+                <circle cx="25" cy="100" r="6"/><circle cx="40" cy="100" r="6"/><circle cx="55" cy="100" r="6"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Beautiful UI -->
+        <div class="overview-card animate-on-scroll">
+          <h3 class="overview-card-title">Beautiful reimagined UI</h3>
+          <div class="overview-card-visual">
+            <p class="overview-formula">1 + 1</p>
+            <p class="overview-result">= 2</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Big Display -->
+        <div class="overview-card animate-on-scroll">
+          <h3 class="overview-card-title">Big Display</h3>
+          <div class="overview-card-visual">
+            <svg viewBox="0 0 80 50" fill="none" stroke="currentColor" stroke-width="1">
+              <line x1="5" y1="45" x2="75" y2="45" opacity="0.3"/>
+              <line x1="5" y1="5" x2="5" y2="45" opacity="0.3"/>
+              <path d="M10 40 Q25 10 40 25 T70 10" stroke="#ff4757" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Card 4: Battery -->
+        <div class="overview-card animate-on-scroll">
+          <div class="overview-card-visual overview-card-visual--stats">
+            <span class="overview-stat-label">up to</span>
+            <span class="overview-stat-value">2 weeks</span>
+            <span class="overview-stat-desc">of use time/charge</span>
+          </div>
+        </div>
+
+        <!-- Card 5: Powerhouse -->
+        <div class="overview-card animate-on-scroll">
+          <h3 class="overview-card-title">Powerhouse</h3>
+          <div class="overview-card-visual">
+            <div class="overview-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1">
+                <rect x="10" y="10" width="40" height="40" rx="5"/>
+                <rect x="18" y="18" width="24" height="24" rx="2"/>
+                <line x1="5" y1="20" x2="10" y2="20"/><line x1="5" y1="30" x2="10" y2="30"/><line x1="5" y1="40" x2="10" y2="40"/>
+                <line x1="50" y1="20" x2="55" y2="20"/><line x1="50" y1="30" x2="55" y2="30"/><line x1="50" y1="40" x2="55" y2="40"/>
+                <line x1="20" y1="5" x2="20" y2="10"/><line x1="30" y1="5" x2="30" y2="10"/><line x1="40" y1="5" x2="40" y2="10"/>
+                <line x1="20" y1="50" x2="20" y2="55"/><line x1="30" y1="50" x2="30" y2="55"/><line x1="40" y1="50" x2="40" y2="55"/>
+              </svg>
+              <span>chip</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Jack of All Trades -->
+        <div class="overview-card animate-on-scroll">
+          <h3 class="overview-card-title">Jack of all trades</h3>
+          <div class="overview-card-visual overview-card-visual--grid">
+            <div class="overview-icon-row">
+              <span class="overview-func-icon">+</span>
+              <span class="overview-func-icon">−</span>
+              <span class="overview-func-icon">×</span>
+              <span class="overview-func-icon">÷</span>
+            </div>
+            <div class="overview-icon-row">
+              <span class="overview-func-icon">📈</span>
+              <span class="overview-func-icon">f(x)</span>
+              <span class="overview-func-icon">dy/dx</span>
+            </div>
+            <div class="overview-icon-row">
+              <span class="overview-func-icon overview-func-icon--dots">...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
          SECTION 10: OUR STORY
          ═══════════════════════════════════════════════════════════════ -->
     <section class="story-section" id="story">
       <div class="story-header animate-on-scroll">
         <h2><span class="gradient-text">Our Story</span></h2>
-        <p>From idea to reality — A year of hard work, dreams, and sleepless nights.</p>
       </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="story-stats">
-      <div class="story-stats-grid">
-        <div class="story-stat-item animate-on-scroll">
-          <div class="story-stat-value">410</div>
-          <div class="story-stat-label">Figma Design Pages</div>
+    <!-- Story Timeline - Card Layout -->
+    <section class="story-timeline">
+      <!-- Card 1: End of freshman year -->
+      <div class="story-card animate-on-scroll">
+        <div class="story-card-content">
+          <span class="story-card-date">End of freshman year (5/2024)</span>
+          <h3 class="story-card-title">Idea established</h3>
+          <p class="story-card-text">
+            It was the end of first year when the idea first emerged — simple yet ambitious: 
+            to create a perfect calculator we had always imagined. My friend and I started addressing 
+            the pain, when 2024 rolls around, a group of four newly-born students ready to do whatever 
+            it took to bring this vision to life.
+          </p>
         </div>
-        <div class="story-stat-item animate-on-scroll">
-          <div class="story-stat-value">12+</div>
-          <div class="story-stat-label">Months of Development</div>
-        </div>
-        <div class="story-stat-item animate-on-scroll">
-          <div class="story-stat-value">∞</div>
-          <div class="story-stat-label">Sleepless Nights</div>
-        </div>
-        <div class="story-stat-item animate-on-scroll">
-          <div class="story-stat-value">1</div>
-          <div class="story-stat-label">Big Dream</div>
+        <div class="story-card-visual">
+          <div class="story-placeholder">
+            <span>what our picture(s) that fits</span>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- Timeline Section -->
-    <section class="timeline-section">
-      <div class="timeline-container">
-        <div class="timeline-line"></div>
-
-        <!-- Milestone 1 -->
-        <div class="timeline-item">
-          <div class="timeline-content animate-on-scroll">
-            <div class="timeline-icon">🎨</div>
-            <span class="timeline-date">March 2025</span>
-            <h3 class="timeline-title">
-              <span class="timeline-number">1</span>
-              UI Completion
-            </h3>
-            <p class="timeline-description">
-              After months of dedication, I refined every little detail, designed every pixel, and polished every
-              element of the user experience. Finally, I completed the UI (User Interface) - a massive Figma project
-              containing up to <strong>410 design pages</strong>.
-            </p>
-          </div>
-          <div class="timeline-dot"></div>
+      <!-- Card 2: 2024's Summer -->
+      <div class="story-card animate-on-scroll">
+        <div class="story-card-content">
+          <span class="story-card-date">2024's Summer</span>
+          <h3 class="story-card-title">Preparation</h3>
+          <p class="story-card-text">
+            That Summer, I learned to CAD and the basics of project management. 
+            While others found their path.
+          </p>
         </div>
-
-        <!-- Milestone 2 -->
-        <div class="timeline-item">
-          <div class="timeline-content animate-on-scroll">
-            <div class="timeline-icon">⌨️</div>
-            <span class="timeline-date">March - May 31, 2025</span>
-            <h3 class="timeline-title">
-              <span class="timeline-number">2</span>
-              Hardware Challenge
-            </h3>
-            <p class="timeline-description">
-              Right after that, I moved into the hardware development phase, focusing especially on the keyboard - one
-              of the most challenging components. The team needed something completely new: a keyboard that functions
-              normally but can change values dynamically like a chameleon. After dozens of prototypes, the team finally
-              settled on using a <strong>unibody elastic rubber mechanism</strong> combined with semi-transparent
-              keycaps.
-            </p>
+        <div class="story-card-visual">
+          <div class="story-placeholder">
+            <span>any pic(s) that fits</span>
           </div>
-          <div class="timeline-dot"></div>
         </div>
+      </div>
 
-        <!-- Milestone 3 -->
-        <div class="timeline-item">
-          <div class="timeline-content animate-on-scroll">
-            <div class="timeline-icon">⏸️</div>
-            <span class="timeline-date">June 2025</span>
-            <h3 class="timeline-title">
-              <span class="timeline-number">3</span>
-              Pause Phase
-            </h3>
-            <p class="timeline-description">
-              By this point, most of the hardware was complete, except for the motherboard (PCB). Despite many efforts,
-              the team couldn't finish it. The original plan was to complete the PCB, place components, and assemble the
-              first functional prototype to start software development.<br><br>
-              However, things don't always go according to plan. When university applications and senior year pressures
-              arrived, the project's progress had to slow down.
-            </p>
-          </div>
-          <div class="timeline-dot"></div>
+      <!-- Card 3: Beginning of Senior year -->
+      <div class="story-card story-card--tall animate-on-scroll">
+        <div class="story-card-content">
+          <span class="story-card-date">Beginning of Senior year (8/2024 – 10/2024)</span>
+          
+          <h3 class="story-card-title">Getting the headquarters</h3>
+          <p class="story-card-text">
+            When senior year began, we started building our own vision. 
+            We rebuilt everything over, making a makespace. 
+            Surprisingly, getting our own room or school vision felt 
+            like after a month of persistence, we secured 
+            a small room, perhaps even just a corner. For us it represented 
+            all we ever dreamed of: our aspirations: Apple products, 
+            Steve Jobs and other great inventors.
+          </p>
+          
+          <h3 class="story-card-title" style="margin-top: var(--space-lg);">Completing the vision</h3>
+          <p class="story-card-text">
+            Then came weeks of late-night brain storming sessions. 
+            After countless revisions and minimal resources, we 
+            finally completed our overall concept. 
+            Men! Everything made it made so beautiful 
+            (most of it did)
+          </p>
         </div>
-
-        <!-- Milestone 4 -->
-        <div class="timeline-item">
-          <div class="timeline-content animate-on-scroll">
-            <div class="timeline-icon">🌟</div>
-            <span class="timeline-date">September 2025 - Present</span>
-            <h3 class="timeline-title">
-              <span class="timeline-number">4</span>
-              Ending and New Beginning
-            </h3>
-            <p class="timeline-description">
-              Finally, we made a decision that was both sad and joyful: to wrap up the project in the form of a website.
-              This is a <strong>"digital memorial"</strong> honoring a year of hard work, dreams, and sleepless nights.
-            </p>
+        <div class="story-card-visual">
+          <div class="story-placeholder">
+            <span>any pic(s) that fits</span>
           </div>
-          <div class="timeline-dot"></div>
+        </div>
+      </div>
+
+      <!-- Card 4: 10/2024 - Development -->
+      <div class="story-card story-card--tall animate-on-scroll">
+        <div class="story-card-content">
+          <span class="story-card-date">10/2024</span>
+          
+          <h3 class="story-card-title">Development</h3>
+          <p class="story-card-text">
+            As development began, I took charge of designing and management... 
+            extra credit realized, I need time, and the spending time focused on software.
+          </p>
+          
+          <h3 class="story-card-title" style="margin-top: var(--space-lg);">User Interface</h3>
+          <p class="story-card-text">
+            We initially thought about bringing images in the UI/UX, but after 
+            two failed attempts, I decided to take it on myself. I learned 
+            Figma and dove deep into the world of interface and Experience design.
+          </p>
+        </div>
+        <div class="story-card-visual">
+          <div class="story-placeholder">
+            <span>any pics that fits only</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: 11/2024 - 3D Printer -->
+      <div class="story-card story-card--tall animate-on-scroll">
+        <div class="story-card-content">
+          <span class="story-card-date">11/2024</span>
+          
+          <h3 class="story-card-title">3D printer purchase</h3>
+          <p class="story-card-text">
+            Soon after, the hardware land and I decided to invest in a 3D printing 
+            lab at HUST — the cheapest 3D printer they offered gives more than capable for 
+            the maker. Life arrived, we set it up in our hall and spent days testing out 
+            fine-tuning it.
+          </p>
+          
+          <h3 class="story-card-title" style="margin-top: var(--space-lg);">Prototype</h3>
+          <p class="story-card-text">
+            Eventually it ran smoothly, and we printed out their prototype. 
+            Holding the plastic device in my hand was surreal — 
+            imperfect but deeply amazing.
+          </p>
+        </div>
+        <div class="story-card-visual">
+          <div class="story-placeholder story-placeholder--note">
+            <span>any pic(s) that fits</span>
+            <span class="story-placeholder-note">this is the area to add pics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6: 11/2024 - Firing of 2 members -->
+      <div class="story-card animate-on-scroll">
+        <div class="story-card-content">
+          <span class="story-card-date">11/2024</span>
+          <h3 class="story-card-title">Firing of 2 members</h3>
+          <p class="story-card-text">
+            Not long after, we had drama as a tough call: Letting go of the two software 
+            members. They weren't as invested, and their lack of commitment was holding us back. 
+            From then on, the workload fell on two of us — 
+            myself and another guy, but I believed he could manage.
+          </p>
+        </div>
+        <div class="story-card-visual">
+          <div class="story-placeholder">
+            <span>pic(s) that fits (if there any)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7: 3/2025 - UI Completion -->
+      <div class="story-card animate-on-scroll">
+        <div class="story-card-content">
+          <span class="story-card-date">3/2025</span>
+          <h3 class="story-card-title">UI Completion</h3>
+          <p class="story-card-text">
+            Months of late nights followed. I refined every detail, designed every pixel, 
+            and crafted every element of the user experience. Eventually, 
+            I completed the UI — a Figma project with 410 pages of work.
+          </p>
+          <p class="story-card-text" style="margin-top: var(--space-sm);">
+            <em>@ hyperlink to Figma project</em>
+          </p>
+        </div>
+        <div class="story-card-visual">
+          <div class="story-placeholder">
+            <span>pic(s) that fits</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8: 3/2025 - 31/5/2025 - Hardware -->
+      <div class="story-card animate-on-scroll">
+        <div class="story-card-content">
+          <span class="story-card-date">3/2025 – 31/5/2025</span>
+          <h3 class="story-card-title">Hardware</h3>
+          <p class="story-card-text">
+            Right after, I joined the hardware development, focusing especially on the keyboard — 
+            one of the hardest components. We need something entirely new: a keyboard 
+            that functions normally, but could dynamically change values like a chameleon. 
+            Dozens of prototype later, we created on a unibody elastic rubber mechanism with 
+            translucent keycaps.
+          </p>
+        </div>
+        <div class="story-card-visual">
+          <div class="story-placeholder">
+            <span>pic(s)/illustration(s) that fits</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 9: 6/2025 - Hiatus -->
+      <div class="story-card animate-on-scroll">
+        <div class="story-card-content">
+          <span class="story-card-date">6/2025</span>
+          <h3 class="story-card-title">Hiatus</h3>
+          <p class="story-card-text">
+            By then, most of the hardware was completed — except for the PCB. 
+            Despite several attempts, we couldn't finalize it. The plan was to finish the PCB, 
+            order all the pieces, and build the first functional prototype to begin software development. 
+            But things don't always go as planned. As college applications 
+            and senior-year pressure piled up, progress unavoidably stalled.
+          </p>
+        </div>
+        <div class="story-card-visual">
+          <div class="story-placeholder">
+            <span>pic(s) that fits (if there's any)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 10: Senior year 9/2025 - Website -->
+      <div class="story-card animate-on-scroll">
+        <div class="story-card-content">
+          <span class="story-card-date">Senior year (9/2025 – upload date)</span>
+          <h3 class="story-card-title">Website</h3>
+          <p class="story-card-text">
+            Eventually, we made the bittersweet decision to wrap up the project as a website — 
+            a digital tribute to a year of hard work, dreams, and sleepless nights. 
+            After months of designing and coding, we finally launched it. 
+            Now, here you are — seeing the result of our long, unforgettable journey.
+          </p>
+        </div>
+        <div class="story-card-visual">
+          <div class="story-placeholder">
+            <span>any pic(s) that fits</span>
+          </div>
         </div>
       </div>
     </section>
