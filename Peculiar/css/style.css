@@ -541,10 +541,10 @@ a {
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.1;
-  margin-bottom: var(--space-xs);
+  margin-bottom: 0;
   opacity: 0;
   animation: fadeInUp 1s ease-out 0.2s forwards;
-  padding: 0 var(--space-sm);
+  padding: 0;
   word-wrap: break-word;
 }
 
@@ -561,7 +561,7 @@ a {
   text-align: center;
   opacity: 0;
   animation: fadeInUp 1s ease-out 0.4s forwards;
-  padding: 0 var(--space-sm);
+  padding: 0;
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -570,8 +570,9 @@ a {
   font-size: var(--text-lg);
   color: var(--color-text-secondary);
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.5;
   word-wrap: break-word;
+  margin: var(--space-xs) 0;
 }
 
 /* Hero Visual Wrapper - contains image and overlapping CTA */
@@ -583,7 +584,7 @@ a {
   margin-top: var(--space-sm);
   width: 100%;
   max-width: 100%;
-  padding: 0 var(--space-md);
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -633,20 +634,62 @@ a {
   max-width: 280px;
 }
 
-/* Hero CTA Button - overlapping on image */
+/* Hero Image Container */
+.hero-image-container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 0.5s forwards;
+  padding: var(--space-md) 0;
+}
+
+.hero-product-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 55vh;
+  object-fit: contain;
+}
+
+/* Light sweep animation for liquid glass */
+@keyframes lightSweep {
+  0% {
+    transform: translateX(-100%) skewX(-15deg);
+  }
+
+  100% {
+    transform: translateX(300%) skewX(-15deg);
+  }
+}
+
+/* Hero CTA Button - Apple Liquid Glass Effect */
 .hero-cta-button {
   display: inline-block;
   padding: var(--space-md) var(--space-2xl);
-  background: rgba(29, 29, 31, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  /* Multi-layer glass background */
+  background:
+    linear-gradient(135deg,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
   border-radius: 50px;
-  color: #f5f5f7;
+  color: var(--color-text-primary);
   font-size: var(--text-lg);
   font-weight: 500;
-  transition: all var(--transition-normal);
-  box-shadow: var(--shadow-lg);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* Liquid glass shadow */
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    0 2px 8px rgba(0, 0, 0, 0.08),
+    inset 0 1px 1px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.05);
+  /* Glass border */
+  border: 1px solid rgba(255, 255, 255, 0.35);
   opacity: 0;
   animation: fadeInUp 1s ease-out 0.7s forwards;
   /* Overlap on image */
@@ -655,22 +698,91 @@ a {
   z-index: 10;
   max-width: 90%;
   text-align: center;
+  /* Subtle text shadow for depth */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Glass highlight effect - top shine */
+.hero-cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.35) 0%,
+      rgba(255, 255, 255, 0) 100%);
+  border-radius: 50px 50px 100px 100px;
+  pointer-events: none;
+}
+
+/* Animated light sweep reflection */
+.hero-cta-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-20deg);
+  animation: lightSweep 4s ease-in-out infinite;
+  animation-delay: 2s;
+  pointer-events: none;
+  border-radius: 50px;
+}
+
+.hero-cta-button:hover::after {
+  animation: lightSweep 2s ease-in-out infinite;
+  animation-delay: 0s;
 }
 
 [data-theme="dark"] .hero-cta-button {
-  background: rgba(245, 245, 247, 0.15);
+  background:
+    linear-gradient(135deg,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0.02) 100%);
   color: #f5f5f7;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 2px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .hero-cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-hover);
-  background: rgba(29, 29, 31, 0.95);
+  transform: translateY(-3px) scale(1.02);
+  background:
+    linear-gradient(135deg,
+      rgba(255, 255, 255, 0.35) 0%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.08) 100%);
+  box-shadow:
+    0 12px 48px rgba(0, 0, 0, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.1),
+    inset 0 1px 2px rgba(255, 255, 255, 0.5),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.05);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 [data-theme="dark"] .hero-cta-button:hover {
-  background: rgba(245, 245, 247, 0.25);
+  background:
+    linear-gradient(135deg,
+      rgba(255, 255, 255, 0.22) 0%,
+      rgba(255, 255, 255, 0.08) 50%,
+      rgba(255, 255, 255, 0.03) 100%);
+  box-shadow:
+    0 12px 48px rgba(0, 0, 0, 0.5),
+    0 4px 12px rgba(0, 0, 0, 0.4),
+    inset 0 1px 2px rgba(255, 255, 255, 0.2),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .hero-badge {
