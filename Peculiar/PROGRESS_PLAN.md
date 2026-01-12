@@ -33,11 +33,11 @@
 - [ ] Kiểm tra responsive trên mobile
 
 ### Design Section
-- [ ] Thay thế các placeholder images bằng hình thực từ Figma
-- [ ] Thêm hình ảnh cho từng tab (Design, Aluminium, Keyboard, etc.)
+- [x] Thay thế các placeholder images bằng hình thực từ Figma
+- [x] Thêm hình ảnh cho từng tab (Design, Aluminium, Keyboard, etc.)
 
 ### UI Section  
-- [ ] Thêm video/GIF từ Figma cho các card UI
+- [x] Thêm video/GIF từ Figma cho các card UI
 - [ ] Tạo animations cho UI cards
 
 ### Functionality Section
@@ -45,7 +45,7 @@
 - [ ] Hoàn thiện responsive layout
 
 ### Powerful Machine Section
-- [ ] Thêm hình ảnh display từ Figma
+- [x] Thêm hình ảnh display từ Figma
 - [ ] Thêm hình ảnh cho các card Fast, Immersive, Tactile
 
 ### General
@@ -53,7 +53,7 @@
 - [ ] Kiểm tra cross-browser compatibility
 - [ ] Kiểm tra responsive trên tất cả breakpoints
 - [ ] Thêm favicon và meta tags nếu cần
-- [ ] Fix lint warning: thêm `line-clamp` property cho compatibility
+- [x] Fix lint warning: thêm `line-clamp` property cho compatibility
 
 ---
 
